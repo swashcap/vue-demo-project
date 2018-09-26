@@ -1,25 +1,37 @@
 <template>
   <div id="app">
-    <transition name="fade">
-      <router-view />
-    </transition>
+    <Header />
+    <main>
+      <transition name="fade">
+        <router-view />
+      </transition>
+    </main>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from './components/Footer'
+import Header from './components/Header'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Footer,
+    Header
+  }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#app main {
+  flex-grow: 2;
+  margin: .5em 0;
 }
 .fade-enter-active, .fade-leave-active {
     transition: opacity .5s

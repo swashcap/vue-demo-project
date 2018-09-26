@@ -1,0 +1,30 @@
+:root {
+  --color-background: whitesmoke;
+  --color-text: black;
+
+  --color-link-hover: orangered;
+  --color-link-active: firebrick;
+}
+
+html {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+@media (min-width: 44em) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
+a {
+  color: inherit;
+}
+a:focus,
+a:hover {
+  color: var(--color-link-hover);
+}
+a:active {
+  color: var(--color-link-active);
+}
