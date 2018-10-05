@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders article summary 1`] = `
+<article>
+  <router-link-stub
+    event="click"
+    tag="a"
+    to="/article/101"
+  >
+    <h1>
+      Rocket Man
+    </h1>
+     
+    <p>
+      Burning up his fuse up here alone
+    </p>
+  </router-link-stub>
+</article>
+`;
