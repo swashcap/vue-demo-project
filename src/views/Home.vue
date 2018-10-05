@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import ArticleSummary from './ArticleSummary'
+import ArticleSummary from '../components/ArticleSummary'
 
 export default {
   name: 'home',
